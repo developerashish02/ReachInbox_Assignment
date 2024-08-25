@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom"; // Import Link from React 
 import AppBar from "../components/AppBar";
 import google from "../assets/google.svg";
 import Footer from "../components/Footer";
+import { AUTH_URL } from "../utils/constants";
 
 function Login() {
   const Navigate = useNavigate();
@@ -13,8 +14,7 @@ function Login() {
     Navigate("/login");
   }
   const handleGoogleLogin = () => {
-    window.location.href =
-      "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-assignment.vercel.app/";
+    window.location.href = AUTH_URL;
   };
 
   return (
