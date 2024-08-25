@@ -8,7 +8,6 @@ function MainPage() {
   const [datas, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedThread, setSelectedThread] = useState(null);
-  console.log(selectedThread);
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
@@ -27,13 +26,11 @@ function MainPage() {
         console.error("Error fetching data:", error);
       }
     }, 2500);
-  
+
     // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
-  
-  
-  
+
   if (loading) {
     return (
       <div className="bg-[#ECEFF3] dark:bg-black dark:text-white text-[#5B5F66] flex h-screen w-full justify-center items-center">
@@ -52,7 +49,6 @@ function MainPage() {
         <AllInbox data={datas} loadMail={loadMail} />
       </div>
       <div className="w-2/4">
-        {/* @ts-ignore */}
         <CenterPage selectedThread={selectedThread} />
       </div>
       <div className="w-1/4">

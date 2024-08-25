@@ -21,7 +21,7 @@ function OneBox() {
     }
   }, [token]);
 
-  const [selectedComponent, setSelectedComponent] = useState(null); 
+  const [selectedComponent, setSelectedComponent] = useState(null);
 
   const handleMenuItemClick = (path: any) => {
     setSelectedComponent(path);
@@ -42,7 +42,6 @@ function OneBox() {
       <SideBar onMenuItemClick={handleMenuItemClick} />
       <TopBar />
       <div>
-        {/* Render the selected component */}
         {selectedComponent === "/" && <SubView />}
         {selectedComponent === "/search" && <SubView />}
         {selectedComponent === "/mail" && <SubView />}

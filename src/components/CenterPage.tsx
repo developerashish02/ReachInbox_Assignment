@@ -112,7 +112,9 @@ const CenterPage: React.FC<Props> = ({ selectedThread }) => {
       <div className="border-b-2 dark:border-[#33383F] border-[#E0E0E0] w-full flex justify-between px-8 py-4">
         <div>
           <div className="dark:text-white text-black text-lg">Orlando</div>
-          <div className="dark:text-[#FFFFFF66] text-[#343A40B2] text-sm">orladom@gmail.com</div>
+          <div className="dark:text-[#FFFFFF66] text-[#343A40B2] text-sm">
+            orladom@gmail.com
+          </div>
         </div>
         <div className="flex items-center space-x-3">
           <div className="flex dark:bg-[#1F1F1F] bg-white border dark:border-[#343A40] items-center text-black dark:text-white rounded-md py-2 px-3 text-sm">
@@ -147,7 +149,8 @@ const CenterPage: React.FC<Props> = ({ selectedThread }) => {
       </div>
 
       <div className="py-8 mx-8 relative flex justify-center items-center">
-        <div className="h-[2px] w-full bg-[#E0E0E0] dark:bg-[#33383F]"></div> {/* Line */}
+        <div className="h-[2px] w-full bg-[#E0E0E0] dark:bg-[#33383F]"></div>{" "}
+        {/* Line */}
         <div className="absolute inset-0 flex justify-center items-center">
           {" "}
           <div className="dark:bg-[#171819] bg-[#E0E0E0] text-black dark:text-white px-4 py-1 text-sm flex items-center space-x-1">
@@ -158,7 +161,6 @@ const CenterPage: React.FC<Props> = ({ selectedThread }) => {
           </div>
         </div>
       </div>
-      {/* @ts-ignore */}
       <div className="mx-8">
         {showPopUp && (
           <CustomMail
@@ -189,11 +191,19 @@ const Mail: React.FC<MailData> = ({ fromEmail, toEmail, subject, body }) => {
       <div className="p-4">
         <div className="flex justify-between py-4">
           <div className="space-y-2">
-            <div className="font-bold dark:text-white text-black ">{subject}</div>
-            <div className="dark:text-[#AEAEAE] text-[#637381] text-sm">from: {fromEmail}</div>
-            <div className="dark:text-[#AEAEAE] text-[#637381] text-sm">to: {toEmail}</div>
+            <div className="font-bold dark:text-white text-black ">
+              {subject}
+            </div>
+            <div className="dark:text-[#AEAEAE] text-[#637381] text-sm">
+              from: {fromEmail}
+            </div>
+            <div className="dark:text-[#AEAEAE] text-[#637381] text-sm">
+              to: {toEmail}
+            </div>
           </div>
-          <div className="text-sm dark:text-[#7F7F7F] text-[#637381]">20 june 2022 : 9:16AM</div>
+          <div className="text-sm dark:text-[#7F7F7F] text-[#637381]">
+            20 june 2022 : 9:16AM
+          </div>
         </div>
         <div
           className="py-4 dark:text-[#E1E0E0] text-[#172B4D] w-2/3"
