@@ -7,7 +7,7 @@ import RightSection from "./RightSection";
 function MainPage() {
   const [datas, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedThread, setSelectedThread] = useState(null);
+  const [selectedThread, setSelectedThread] = useState("");
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
@@ -27,7 +27,6 @@ function MainPage() {
       }
     }, 2500);
 
-    // Cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
