@@ -9,7 +9,6 @@ video : [https://www.loom.com/share/6a90993e329e4e3a8746df55453365f6]
 
 - **Frontend**: React (latest version), Axios, Tailwind CSS, typescript, React Router Dom 
 - **API Handling**: Axios
-- **Database**: MongoDB
 - **Deployment**: netlify
 
 ## Live Demo
