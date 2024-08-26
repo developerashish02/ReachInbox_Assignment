@@ -1,28 +1,44 @@
-# ReachInbox.AI: React Project
+# ReachInbox Assignment
 
----
+# Video Demo
 
-## Overview
+video : [https://www.loom.com/share/6a90993e329e4e3a8746df55453365f6]
 
-This project is a React application written in TypeScript using figma file https://www.figma.com/file/uECxqvFhEx9dn4ZuO7wqmu/Reachinbox-Assignment?type=design&node-id=6-19154&mode=design&t=03bJH7Jr6FYF7VSR-0
-and api documentation
-https://documenter.getpostman.com/view/30630244/2sA2rCTMKr#433eb613-e405-4239-9e2d-f20485b31b27
 
----
+## Technologies Used
 
-## Installation
+- **Frontend**: React (latest version), Axios, Tailwind CSS, typescript, React Router Dom 
+- **API Handling**: Axios
+- **Database**: MongoDB
+- **Deployment**: netlify
 
-To install and run this project on your local machine, follow these steps:
+## Live Demo
 
-1. **Clone Repository:**
+You can view the live demo of the application at: [https://reachinbox-ashish-assignment.netlify.app]
+
+
+## Accessing the Code
+
+1. **Clone the Repository**
+
    ```bash
-   git clone https://github.com/punyakrit/Reachinbox-Assignment.git
+     git clone https://github.com/developerashish02/ReachInbox_Assignment.git
+   ```
 
-   cd into project
+2. **Navigate to the Project Directory**
 
-   run `npm install`
+   ```bash
+   ReachInbox_Assignment
+   ```
 
-   run `npm run dev`
+3. **Install Dependencies**
 
-   now open in browser 
-   http://localhost:5173/
+   ```bash
+   npm install
+   ```
+
+4. **Run the Development Server**
+
+   ```bash
+   npm run dev
+   ```
